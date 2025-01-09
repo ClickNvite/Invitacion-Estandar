@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/Invitacion-Estandar/',
+  basePath: '/invitacion-estandar/',
   entryPoints: {
     '': () => import('./main.server.mjs')
   },
