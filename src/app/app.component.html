@@ -1,0 +1,55 @@
+<!-- Las invitaciones estandar seran sencillas seran una pantalla en la que se mostrara la imagen de la quinceañera, bautizado, novios, cumpleañeros etc, aqui se dara los detalles basicos del evento con la confirmacion de asistencia -->
+ <!-- Todo ira dentro de un div el cual tendra como fonto la imagen tal como se observa en el codigo usando tailwind podremos usar el -->
+ <!-- Las dimensiones de la imagen deben ser screen, el cual es un atributo de tailwind el cual hace que la imagen se adapte a las pantallas del dispositivo ya sea en el ancho como en el alto, pero en esta ocasion decidi añadirle que en vista de computadoras tenga un ancho automatico para que no se vea tan estirada la imagen por si llegan a ver la invitacion en computadoras. -->
+
+
+
+<div class="h-screen bg-[url('/img/fondo_xv.jpg')] w-screen sm:w-auto flex flex-col justify-between pb-10 items-center pt-10 bg-no-repeat sm:bg-contain bg-center">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<div class="w-full flex flex-col justify-center items-center">
+  
+  <img data-aos="fade-up"
+  data-aos-duration="3000" src="/img/mis_xv.png" alt="" class="w-auto ">
+
+  <h1 data-aos="fade-down"
+  data-aos-duration="3000" style="font-family: 'Dancing Script', cursive ;" class="text-pink-300 text-6xl  ">Daniela</h1>
+</div>
+<div class="w-full flex flex-col justify-end h-screen items-center text-center">
+
+  <p data-aos="fade-down" data-aos-duration="2000"  class=" text-3xl text-pink-400" style="font-family: 'Dancing Script', cursive ;">
+      Ceremonia Religiosa
+  </p>
+  
+  <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200" class="p-1 text-lg text-white leading-6" >
+      14h00 <br>
+      Sábado, 21 de Diciembre de 2024 <br>
+      Iglesia Católica Cristo Luz del Mundo Vilcabamba
+
+  </p>
+
+  <p data-aos="fade-down" data-aos-duration="2000"  class=" text-3xl text-pink-400" style="font-family: 'Dancing Script', cursive ;">
+      Recepción
+  </p>
+  
+  <p data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200" class="p-1 text-lg text-white leading-6" >
+      16h00 <br>
+      Sábado, 21 de Diciembre de 2024 <br>
+      Huerto Del Viejo Angel
+  </p>
+
+
+  <a 
+  style="font-family: 'Newsreader', serif;"  
+  (click)="openSaveDialog()" 
+  type="button" 
+  class="mt-5 focus:outline-none text-white bg-[#eebbbb] hover:bg-[#e29c9c] 
+         focus:ring-4 focus:ring-[#e29c9c] font-medium rounded-lg text-sm 
+         px-5 py-2.5 me-2 mb-2">
+  Confirmar Asistencia
+</a>
+
+</div>
+
+
+
+</div>
