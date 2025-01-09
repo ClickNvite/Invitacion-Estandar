@@ -2,12 +2,12 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/invitacion-estandar/',
+  baseHref: '/',
   locale: undefined,
   routes: undefined,
   assets: {
-    'index.csr.html': {size: 79305, hash: 'd171a696310fe7cb3ebf36e811c3aa1345b4cff26d5100bc0017f1f79de44876', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 78036, hash: '65190f2d48f9cc633f84fc05d99f68f4ff7e7dc982e02ee82251e067a42223d1', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 79286, hash: '19f3dd5f856cb6430b299532c3ab9ab3be21558f7e4ed2ac02e8e74549185c80', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 78017, hash: '0a90445e6ef49295302e33103db2cce6b5cd97c8a05aa4a482dd37395eefa2c9', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
     'styles-GP2IQNUC.css': {size: 7793, hash: 'oYuIwrXMym4', text: () => import('./assets-chunks/styles-GP2IQNUC_css.mjs').then(m => m.default)}
   },
 };
